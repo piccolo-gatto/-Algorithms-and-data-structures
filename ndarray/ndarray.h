@@ -50,7 +50,7 @@ public:
     void fillOnes() {
         fill(1);
     }
-    void fillRandoms(T min = INT_MIN, T max = INT_MAX) {
+    void fillRandoms(T min = -2147483648, T max = 2147483648) {
         srand(time(0));
         for (int i = 0; i < size; i++) {
             array[i] = min + rand() % max;
